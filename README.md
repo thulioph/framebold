@@ -197,4 +197,5 @@ E cria classes com o prefixo "no-(propriedade)" assim, você pode utilizar um cs
 3. É possivel que o usuário não esteja utilizando a engine mais recente do seu navegador, para corrigir isso utiliza-se da meta tag
 "meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" principalmente para usuários do IE, para fazer com que a engine do seu navegador seja a mais recente. Essa meta tag "diz que" o usuário deve utilizar a engine mais recente do seu navegador, caso contrário utilize a do chrome, garatindo uma experiência para o navegador e o usuário melhor possível.
 
-4. A meta tag "meta name="viewport" content="width=device-width, initial-scale=1.0" é utilizada para dizer ao navegador para usar como largura do layout, a largura da viewport, desativando a escala inicial, isso faz com que o site fique flexível se baseando no tamanho do aparelho.
+4. A meta tag "meta name="viewport" content="width=device-width, initial-scale=1.0" é utilizada para "dizer ao navegador" para usar como largura do layout, a largura da viewport, desativando a escala inicial, isso faz com que o site fique flexível se baseando no tamanho do aparelho.
+

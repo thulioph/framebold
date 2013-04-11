@@ -1,12 +1,14 @@
 
 #FrameBold
 
-Este documento foi criado com base na tradução da documentação original do HTML5 Boilerplate, ele contém um mix de arquivos do Initializr e do HTML5 Boilerplate que resolvi utilizar no meu dia-a-dia.
+O intúito de realizar este "guia" não é imitar ou copiar, fiz este documento para minha utilização e para os desenvolvedores da empresa onde trabalho que é a <a href="http://www.boldcomunicacao.com.br" target="_blank">bold comunicação</a> pois muitos não conhecem os links ou as ferramentas que citei aqui, o propósito disso é ser um guia rápido onde irá reunir coisas que utilizamos ou que podemos utilizar para nos ajudar nos projetos.
+Será atualizado a medida do possível por mim, ou por outros que quiserem contribuir com o projeto. 
 
 Author: @thulioph_ <br>
 Date: 07/04/2013 <br>
-Company: Bold Comunicaçao <br> 
 
+
+Este documento foi criado com base na tradução da documentação original do HTML5 Boilerplate, ele contém um mix de arquivos do Initializr e do Boilerplate que resolvi utilizar no meu dia-a-dia.
 Foi utilizado como base o modelo do initializr responsive, na minha rotina este é o mais ideal, você pode personalizar ou escolher outro modelo pelo site, a estrutura não irá mudar muita coisa. 
 
 
@@ -21,12 +23,7 @@ Link: http://www.initializr.com/ <br>
 Documentação: https://github.com/verekia/initializr-website
 
 
-<br>
-
-No final deste documento, existe uma sessão sobre dicas que foram retiradas a partir do projeto http://browserdiet.com .
-
-O intúito de realizar este "guia" não é imitar ou copiar, fiz este documento para utilização dos desenvolvedores da empresa onde trabalho que é a <a href="http://www.boldcomunicacao.com" target="_blank">bold comunicação</a> pois muitos não conhecem os links ou as ferramentas que citei aqui, o propósito disso é ser um guia rápido onde irá reunir coisas que utilizamos ou que podemos utilizar para nos ajudar nos projetos.
-Será atualizado a medida do possível por mim, ou por outros que quiserem contribuir com o projeto.  
+No final deste documento, existe uma sessão sobre dicas que foram retiradas a partir do projeto http://browserdiet.com . 
 
 ================================================================================================================================================
 
@@ -160,8 +157,8 @@ Este é o esqueleto padrão HTML que você utiliza como base para todas as pági
 Para evitar deixar cache local, utiliza-se os parâmetros: 
 
 ```
-< link rel="stylesheet" href="css/normalize.min.css?v=2" > 
-< link rel="stylesheet" href="css/normalize.min.css?i=<?php echo rand(); ?>" >
+<link rel="stylesheet" href="css/nomedoarquivo.css?v=2"> 
+<link rel="stylesheet" href="css/nomedoarquivo.css?i=<?php echo rand(); ?>">
 ```
 
 * Não esquecer de alterar o trecho correspondente ao ANALYTICS, só é preciso trocar o ID da aplicação, pois a versão desse projeto é a minificada e a mais aconselhada para utilizar.
@@ -209,4 +206,59 @@ E cria classes com o prefixo "no-(propriedade)" assim, você pode utilizar um cs
 
 #### DICAS
 
-Abaixo existe uma lista de técnicas para melhorar a performance do seu site, com uma breve descrição do benefício que utilizar essa técnica pode te trazer:
+Abaixo existe uma lista com técnicas que poderão lhe ajudar e irão melhorar tanto a sua performance quanto a do seu projeto, no final de cada explicação existe um link para uso da ferramenta:
+
+- <strong>Evitar código incorporado ou inline</strong>: Adotaremos como padrão, a utilização para carregamento de arquivos externos onde o css e o javascript é carregado da seguinte forma:
+
+```
+<link rel="stylesheet" href="css/nomedoarquivo.css">
+<script src="js/nomedoarquivo.js"></script>
+```
+
+- <strong>Estilo e Scripts</strong>: css no topo (dentro do < head >) e script no rodapé (antes do fechamento do < /body >).
+
+- <strong>Utilização do async</strong>: Quando não se utiliza o async a página aguarda o script terminar de carregar antes de continuar a renderização, isso só torna o projeto mais lento. Com a utilização do async o download do script é feito de forma assíncrona, ou seja a página irá renderizar junto com o script, um exemplo de como ficaria o código com o async:
+
+```
+<script async src="js/nomedoarquivo.js"></script>
+```
+
+- <strong>Combinar arquivos css/js</strong>: Para evitar que o browser faça diversas requisições ao servidor para fazer download dos arquivos css/js, evitaremos utilizar vários css/js para arquivos diferentes, e iremos utilizar todos em um só.
+
+Evitaremos fazer isso:
+```
+<link rel="stylesheet" href="nomedoarquivo01.css" media="all">
+<link rel="stylesheet" href="nomedoarquivo02.css" media="all">
+<link rel="stylesheet" href="nomedoarquivo03.css" media="all">
+<link rel="stylesheet" href="nomedoarquivo04.css" media="all">
+
+<script async src="js/nomedoarquivo01.js"></script>
+<script async src="js/nomedoarquivo02.js"></script>
+<script async src="js/nomedoarquivo03.js"></script>
+<script async src="js/nomedoarquivo04.js"></script>
+``` 
+
+Faremos isso:
+```
+<link rel="stylesheet" href="main.css" media="all">
+
+<script async src="js/main.js"></script>
+```
+
+- <strong>Utilizar sempre a última versão do jQuery</strong>: Para evitar utilizar uma versão do jQuery antiga, ou que tenha bugs, iremos sempre utilizar a última versão do jQuery, uns optam utilizar o <a href="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" target="_blank"> cdn da google </a> outros optam por fazer o download direto pelo site do <a href="http://jquery.com/" target="_blank">jQuery</a>.
+
+Como forma de "segurança" iremos mencionar o cdn da google e caso ele não funcione ou esteja fora do ar, irá utilizar o nosso dentro da pasta js, o código ficará assim:
+
+```
+<script async src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+
+```
+
+
+
+
+- <strong>Spritesheets</strong>: A utilização de spritesheets evita que o browser faça diversas requisições para verificar as imagens, sem falar na performance que o usuário ganha ao navegar no site, pois irá parecer que o site é mais rápido. 
+<a href="http://spritepad.wearekiss.com/" target=_blank>Link</a> 
+
+

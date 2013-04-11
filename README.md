@@ -21,7 +21,14 @@ Link: http://www.initializr.com/ <br>
 Documentação: https://github.com/verekia/initializr-website
 
 
-=================================================================================================================================================
+<br>
+
+No final deste documento, existe uma sessão sobre dicas que foram retiradas a partir do projeto http://browserdiet.com .
+
+O intúito de realizar este "guia" não é imitar ou copiar, fiz este documento para utilização dos desenvolvedores da empresa onde trabalho que é a <a href="http://www.boldcomunicacao.com" target="_blank">bold comunicação</a> pois muitos não conhecem os links ou as ferramentas que citei aqui, o propósito disso é ser um guia rápido onde irá reunir coisas que utilizamos ou que podemos utilizar para nos ajudar nos projetos.
+Será atualizado a medida do possível por mim, ou por outros que quiserem contribuir com o projeto.  
+
+================================================================================================================================================
 
 ## Estrutura Básica
 
@@ -199,3 +206,7 @@ E cria classes com o prefixo "no-(propriedade)" assim, você pode utilizar um cs
 
 4. A meta tag "meta name="viewport" content="width=device-width, initial-scale=1.0" é utilizada para "dizer ao navegador" para usar como largura do layout, a largura da viewport, desativando a escala inicial, isso faz com que o site fique flexível se baseando no tamanho do aparelho.
 
+
+#### DICAS
+
+Abaixo existe uma lista de técnicas para melhorar a performance do seu site, com uma breve descrição do benefício que utilizar essa técnica pode te trazer:

@@ -1,7 +1,7 @@
 
 #FrameBold
 
-O intúito de realizar este "guia" não é imitar ou copiar, fiz este documento para minha utilização e para os desenvolvedores da empresa onde trabalho que é a <a href="http://www.boldcomunicacao.com.br" target="_blank">bold comunicação</a> pois muitos não conhecem os links ou as ferramentas que citei aqui, o propósito disso é ser um guia rápido onde irá reunir coisas que utilizamos ou que podemos utilizar para nos ajudar nos projetos.
+O intúito de realizar este "guia" não é imitar ou copiar, fiz este documento para minha utilização e para os desenvolvedores da empresa onde trabalho que é a <a href="http://www.boldcomunicacao.com.br" target="_blank">Bold Comunicação</a> pois muitos não conhecem os links ou as ferramentas que citei aqui, o propósito disso é ser um guia rápido onde irá reunir coisas que utilizamos ou que podemos utilizar para nos ajudar nos projetos.
 Será atualizado a medida do possível por mim, ou por outros que quiserem contribuir com o projeto. 
 
 Author: @thulioph_ <br>
@@ -154,14 +154,8 @@ Página de error 404 para personalizar.
 
 Este é o esqueleto padrão HTML que você utiliza como base para todas as páginas em seu projeto.
 
-Para evitar deixar cache local, utiliza-se os parâmetros: 
-
-```
-<link rel="stylesheet" href="css/nomedoarquivo.css?v=2"> 
-<link rel="stylesheet" href="css/nomedoarquivo.css?i=<?php echo rand(); ?>">
-```
-
 * Não esquecer de alterar o trecho correspondente ao ANALYTICS, só é preciso trocar o ID da aplicação, pois a versão desse projeto é a minificada e a mais aconselhada para utilizar.
+
 
 =================================================================================================================================================
 
@@ -252,13 +246,41 @@ Como forma de "segurança" iremos mencionar o cdn da google e caso ele não func
 ```
 <script async src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-
 ```
-
-
-
 
 - <strong>Spritesheets</strong>: A utilização de spritesheets evita que o browser faça diversas requisições para verificar as imagens, sem falar na performance que o usuário ganha ao navegar no site, pois irá parecer que o site é mais rápido. 
 <a href="http://spritepad.wearekiss.com/" target=_blank>Link</a> 
 
+- <strong>Otimizar as imagens</strong>: Ao se utilizar imagens com extensão .png o ideal é otimiza-las, pois elas contém informações que não são importantes para o usuário e muito menos para o servidor. Existem links na web que fazem esse trabalho para você: <a href="http://tinypng.org/" target="_blank"> Link </a>.
+Nem todo projeto é feito só com imagens em .png , caso você precise trabalhar com imagens em .jpeg é aconselhável utilizar JPEGs progressivos. Como fazer?
 
+No photoshop: 
+SAVE AS -> ESCOLHA O FORMATO .jpg -> NA TELA QUE SE ABRE (FORMAT OPTIONS) VOCÊ MARCA A OPÇÃO PROGRESSIVE SCANS 5 -> OK
+
+E pronto, sua imagem está um .jpg progressivo e irá aparecer de forma gradativa para o usuário, melhorando o carregamento.
+
+
+- <strong>Para evitar deixar cache local, utiliza-se o parâmetro</strong>: 
+
+```
+<link rel="stylesheet" href="css/nomedoarquivo.css?i=<?php echo rand(); ?>">
+```
+
+- <strong>Gzip</strong>: Boa parte do conteúdo que trafegamos em um site é texto (HTML, CSS, JavaScript, JSON, XML etc). Para esse tipo de conteúdo, é uma boa prática habilitar a compressão GZIP no servidor, que tem como função comprimir os dados do servidor antes de enviar para o navegador do usuário através da rede. É como "zipar" os arquivos antes de enviar, isso faz com que os arquivos fiquem bem menores. Para isso, é feito uma configuração no arquivo do seu servidor, como modelo utilizarei o servidor Apache, para realizar esse procedimento, iremos ediar o arquivo <code> .htaccess </code> para habilitar o deflate.
+
+```
+AddOutputFilterByType DEFLATE text/html
+AddOutputFilterByType DEFLATE text/plain
+AddOutputFilterByType DEFLATE text/xml
+AddOutputFilterByType DEFLATE text/css
+AddOutputFilterByType DEFLATE application/javascript
+```
+
+- <strong>Ferramentas para diagnóstico</strong>: Após finalizar o seu projeto é indicado você diagnostica-lo para saber o resultado final dele, saber se o mesmo está carregando de forma rápida, se existe alguma técnica que você pode não ter feito que seria ideal, etc.. Para isso existem ferramentas online, ou extensões para browsers que são instaladas e lhe dão essas informações.  Os links que estão aqui são relacionados ao PageSpeed do google, que é o que utilizo e sempre me deu dicas e informações precisas, caso não goste ou não queria utilizar, uma rápida pesquisa na internet sobre o gênero, irá encontrar muita coisa útil.
+
+Extensão para o navegador Chrome: <a href="https://developers.google.com/speed/pagespeed/insights_extensions" target="_blank">Link</a>. <br>
+
+Teste online: <a href="https://developers.google.com/speed/pagespeed/insights">Link</a>.
+
+
+### Fim :)

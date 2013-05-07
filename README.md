@@ -37,8 +37,6 @@ Estrutura básica das pastas do projeto:
 ├── arquivos
 ├── css
 │   ├── main.css
-│   └── normalize.css
-│   └── normalize.min.css
 ├── doc
 ├── img
 ├── inc
@@ -47,9 +45,8 @@ Estrutura básica das pastas do projeto:
 │   ├── plugins.js
 │   └── vendor
 │       ├── head.min.js
-│       ├── html5-3.6-respond-1.1.0.min.js
-│       ├── jquery.min.js
-│       └── modernizr.min.js
+│       ├── jquery-1.9.1.js
+│       └── jquery.lazyload.min.js
 ├── .htaccess
 ├── 404.html
 ├── favicon.ico

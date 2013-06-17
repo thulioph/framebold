@@ -1,72 +1,34 @@
 /* TEAM */
-  Chef:Juanjo Bernabeu
-  Contact: hello [at] humanstxt.org
-  Twitter: @juanjobernabeu
-  From:Barcelona, Catalonia, Spain
 
-  UI developer: Maria Macias
-  Twitter: @maria_ux
-  From:Barcelona, Catalonia, Spain
+  Web Designer: Thulio Philipe
+  Contact: thulioph.com
+  Twitter: @thulioph_
+  From: Brazil, Pernambuco, Recife
 
-  One eyed illustrator: Carlos Mañas
-  Twitter: @oneeyedman
-  From:Madrid, Spain
+  Front-End Engineer: Thulio Philipe
+  Contact: thulioph.com
+  Twitter: @thulioph_
+  From: Brazil, Pernambuco, Recife
 
-  Standard Man: Abel Cabans
-  Twitter: @abelcabans
-  From:Barcelona, Catalonia, Spain
-
-  Web designer: Abel Sutilo
-  Twitter: @abelsutilo
-  From:Sevilla, Andalucia, Spain
-
+  Back-End Engineer: Thulio Philipe
+  Contact: thulioph.com
+  Twitter: @thulioph_
+  From: Brazil, Pernambuco, Recife
 
 
 /* THANKS */
-  (First) EN Translator: Jos Flores
-  Twitter: @prosciuttos
-  From: Barcelona, Catalonia, Spain
 
-  CA Translator: Eva AC
-  Twitter: @evaac
-  From:Barcelona, Catalonia, Spain
+  (First) Bold Comunicação
+  Contact: http://www.boldcomunicacao.com.br/
+  From: Brazil, Pernambuco, Recife
 
-  EN Translator: Marta Armada
-  Twitter: @martuishere
-  From: Barcelona, Catalonia, Spain
-
-  RU Translator: Alexey Bass
-  Twitter: @alexey_bass
-  Location: Israel, Netanya
-
-  RU Translator: Vladimir Epifanov
-  Twitter: @voldmar
-  Location: Moscow, Russia
-
-  NL Translator: Rowdy Rabouw
-  Twitter: @rowdyrabouw
-  Location: Gouda, The Netherlands
-
-  DE Translator: Dennis Fischer
-  Twitter: @ichderfisch
-  Location: Düsseldorf / Germany
-
-  CZ Translator: Daniel Kršiak
-  Twitter: @krsiakdaniel
-  Location: Czech Republic
-
-  ZH Translator: Ana Villalba
-  Location: Spain
-
-  JA Translator: Clémence Haure
-  Location: Spain
-
-  Media Queries by: Marta Armada (@martuishere) and Javier Usobiaga (@htmlboy)
+  (Second) Friends and Social Networks that are always helping us in several projects.
 
 
 /* SITE */
-  Last update: 2012/02/04
+
+  Last update: 2013/06/17
   Doctype: HTML5
-  IDE: Sublime Text, Notepad++, FileZilla, Photoshop
+  IDE: Sublime Text 2, FileZilla, Photoshop, Chrome Developer Tools
   Standards: HTML5, CSS3
-  Components: Modernizr, jQuery, Normalize
+  Components: jQuery

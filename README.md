@@ -9,7 +9,6 @@ Date: 07/04/2013 <br>
 
 
 Este documento foi criado com base na tradução da documentação original do HTML5 Boilerplate, ele contém um mix de arquivos do Initializr e do Boilerplate que resolvi utilizar no meu dia-a-dia.
-Foi utilizado como base o modelo do initializr responsive, na minha rotina este é o mais ideal, você pode personalizar ou escolher outro modelo pelo site, a estrutura não irá mudar muita coisa. 
 
 
 - HTML5 BOILERPLATE <br>
@@ -44,14 +43,17 @@ Estrutura básica das pastas do projeto:
 │   ├── main.js
 │   ├── plugins.js
 │   └── vendor
+│       ├── colorbox.min.js
 │       ├── head.min.js
 │       ├── jquery-1.9.1.js
-│       └── jquery.lazyload.min.js
+│       ├── jquery.cycle.all.js
+│       ├── jquery.lazyload.min.js
+│       └── mask_input.js
 ├── .htaccess
 ├── 404.html
 ├── favicon.ico
 ├── humans.txt
-└── index.html
+└── index.php
 ```
 
 Abaixo uma visão geral de cada parte e como usa-las:

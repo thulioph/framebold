@@ -62,7 +62,7 @@ Abaixo uma visão geral de cada parte e como usa-las:
 ### Arquivos 
 
 
-Neste diretório, irá conter todos os arquivos relacionados ao projeto, briefing, imagens não utilizadas, PSD'S etc..  
+Neste diretório, irá conter todos os arquivos relacionados ao projeto, briefing, imagens não utilizadas, PSD'S, fontes ou qualquer outra coisa relacionado ao projeto etc..  
 
 =================================================================================================================================================
 
@@ -70,13 +70,9 @@ Neste diretório, irá conter todos os arquivos relacionados ao projeto, briefin
 ### css
 
 
-Este diretório deve conter todos os arquivos do seu projeto CSS. Ele inclui alguns CSS inicial para ajudar você a começar a partir de
-uma base sólida.
+Este diretório deve conter todos os arquivos do seu projeto CSS. 
 
-- normalize.css  [ http://necolas.github.io/normalize.css ]
-
-Normalize.css é uma alternativa moderna para redefinir o CSS, faz os navegadores processarem todos os elementos de forma mais consistente
-e em linha com os padrões modernos, afeta somente os estilos que precisam ser normalizados. Utiliza-se normalize ao invés do reset, pois o reset é uma forma muito "grosseira".
+Como padrão, sempre utilizo uma única folha de estilo, bem comentada e dividida por partes de formatação. Esse arquivo inclui o reset e umas formatações que gosto de fazer sempre. 
 
 =================================================================================================================================================
 
@@ -94,8 +90,8 @@ Este diretório deverá conter todas as imagens do projeto, fica ao seu critéri
 
 ### inc
 
-Este diretório deverá conter todos os arquivos de include.
-Para facilitar o entendimento e a localização no código, utilizaremos como padrão a seguinte nomenclatura:
+Este diretório deverá conter todos os arquivos include.
+Para facilitar o entendimento e a localização no código, utilizo como padrão a seguinte nomenclatura para includes:
 
 ```
   < ?php include("nome.inc.php"); ? >

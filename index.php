@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR"> 
     <head>
-        <meta charset="utf-8">
-
-        <meta http-equiv="content-type" content="text/html;charset=utf-8">
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
 
         <!--modo de compatibilidade com o chrome, caso não tenha, baixa o frame no inicio do body-->
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">

@@ -102,11 +102,10 @@ Para facilitar o entendimento e a localização no código, utilizo como padrão
 ### js
 
 Este diretório deve conter todos os arquivos do seu projeto JS. Bibliotecas, plugins, e código personalizado podem ser incluídos aqui. 
-Ele inclui alguns JS iniciais para ajudar você a começar.
 
 - vendor
 
-Este diretório pode ser usado para conter todo o código da biblioteca de terceiros. Versões minificadas do jQuery, Modernizr, Head.js
+Este diretório deve ser usado para conter todo o código da biblioteca de terceiros. Versões minificadas do jQuery, Colorbox, Head, etc 
 são incluídos por padrão neste diretório.
 
 
@@ -132,7 +131,7 @@ para se certificar de que eles estão no cobertor de segurança jQuery namespace
 
 ### htaccess
 
-Arquivo de configuração para o servidor APACHE.
+Arquivo de configuração para o servidor APACHE. Neste modelo existente já está habilitada algumas funcionalidades, este aquivo ainda está em fase de desenvolvimento (por mim) para aproveitar 100% do seu poder.
 
 =================================================================================================================================================
 
@@ -144,48 +143,30 @@ Página de error 404 para personalizar.
 =================================================================================================================================================
 
 
-### index.html
-
-
-Este é o esqueleto padrão HTML que você utiliza como base para todas as páginas em seu projeto.
-
-* Não esquecer de alterar o trecho correspondente ao ANALYTICS, só é preciso trocar o ID da aplicação, pois a versão desse projeto é a minificada e a mais aconselhada para utilizar.
-
-
-=================================================================================================================================================
-
-
 ### humans.txt
 
-Neste arquivo deverá conter os membros que trabalharam no projeto e a tecnologia por detrás dele, assim como agradecimentos ou outras informações do gênero.
+Neste arquivo deverá conter os membros que trabalharam no projeto e a tecnologia por detrás dele, assim como agradecimentos ou outras informações do gênero. O arquivo deverá ficar na raiz do projeto, para mais informações consulte: <a href=" http://humanstxt.org" target="_blank">Humans org</a>
 
 =================================================================================================================================================
 
 
-### Apple-touch-icon
+### index.php
+
+Este é o esqueleto padrão que utilizo em meus projetos, basicamente são chamadas definidas por uma ordem no cabeçalho, scripts no final do projeto e comentários que utilizo para localização de início e fim de projeto. A extensão utilizada é .php pois trabalho com includes, for, etc e preciso de arquivos php. 
+(OBS: Você pode alterar e trabalhar com .html ou qualquer outra extensão da sua necessidade)
 
 
-Ícones para gadgets da APPLE, utilizar esse tamanho de ícone e personalizar para incluir no projeto, o PSD do arquivo se encontra 
-no diretório ARQUIVOS.
-
-=================================================================================================================================================
-
+==================================================================================================================================================
 
 ##Observações
-
-#### Classe "no-js" na tag html
-
-Modernizr é uma biblioteca JavaScript que adiciona classes para o elemento html com base nos resultados do teste de função e que garante que todos os navegadores pode fazer uso de elementos HTML5. Isso permite que você direcione as partes do seu CSS e JavaScript com base nos recursos suportados por um navegador.
-
-A utilização dessa clase, auxilia na detectação dos recursos que o browser aceita, "trabalha em conjunto" com o MODERNIZR.
-E cria classes com o prefixo "no-(propriedade)" assim, você pode utilizar um css opcional, caso o browser não dê suporte a alguma propriedade do css.
-
 
 #### meta-tags
 
 1. Charset deve vim antes de qualquer código dentro do head para evitar problemas de segurança, inclusive antes do 'title' .
 
-2. Meta tag http-equiv para o modelo de compatibilidade deve ser inserida logo após o charset.
+1. Meta tag http-equiv para o modelo de compatibilidade deve ser inserida logo após o charset.  
+
+<a href="http://www.w3.org/International/O-charset.pt-br.php"> mais informações</a>
 
 3. É possivel que o usuário não esteja utilizando a engine mais recente do seu navegador, para corrigir isso utiliza-se da meta tag
 "meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" principalmente para usuários do IE, para fazer com que a engine do seu navegador seja a mais recente. Essa meta tag "diz que" o usuário deve utilizar a engine mais recente do seu navegador, caso contrário utilize a do chrome, garatindo uma experiência para o navegador e o usuário melhor possível.

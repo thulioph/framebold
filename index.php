@@ -17,7 +17,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!-- CSS -->
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/main.css" media="all">
         
         <!-- HUMANS -->
         <link type="text/plain" rel="author" href="http://www.boaterraveiculos.com.br/humans.txt" />

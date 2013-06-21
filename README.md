@@ -167,7 +167,15 @@ Este é o esqueleto padrão que utilizo em meus projetos, basicamente são chama
 2. É possivel que o usuário não esteja utilizando a engine mais recente do seu navegador, para corrigir isso utiliza-se da meta tag
 "meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" principalmente para usuários do IE, para fazer com que a engine do seu navegador seja a mais recente. Essa meta tag "diz que" o usuário deve utilizar a engine mais recente do seu navegador, caso contrário utilize a do chrome, garantindo uma experiência para o navegador e o usuário melhor possível.
 
-4. A meta tag "meta name="viewport" content="width=device-width, initial-scale=1.0" é utilizada para "dizer ao navegador" para usar como largura do layout, a largura da viewport, desativando a escala inicial, isso faz com que o site fique flexível se baseando no tamanho do aparelho.
+3. A meta tag ("meta name="viewport" content="width=device-width, initial-scale=1.0") é utilizada para "dizer ao navegador" para usar como largura do layout, a largura da viewport, desativando a escala inicial, isso faz com que o site fique flexível se baseando no tamanho do aparelho.
+
+4. Impedir o usuário de dar zoom na sua aplicação quando tiver no smartphone utiliza:
+
+```
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+```
+
+==================================================================================================================================================
 
 
 #### DICAS
@@ -181,13 +189,8 @@ Abaixo existe uma lista com técnicas que poderão lhe ajudar e irão melhorar t
 <script src="js/nomedoarquivo.js"></script>
 ```
 
-- <strong>Estilo e Scripts</strong>: css no topo (dentro do < head >) e script no rodapé (antes do fechamento do < /body >).
+- <strong>Estilo e Scripts</strong>: css no topo (dentro do <head>) e script no rodapé (antes do fechamento do </body>).
 
-- <strong>Utilização do async</strong>: Quando não se utiliza o async a página aguarda o script terminar de carregar antes de continuar a renderização, isso só torna o projeto mais lento. Com a utilização do async o download do script é feito de forma assíncrona, ou seja a página irá renderizar junto com o script, um exemplo de como ficaria o código com o async:
-
-```
-<script async src="js/nomedoarquivo.js"></script>
-```
 
 - <strong>Combinar arquivos css/js</strong>: Para evitar que o browser faça diversas requisições ao servidor para fazer download dos arquivos css/js, evitaremos utilizar vários css/js para arquivos diferentes, e iremos utilizar todos em um só.
 
@@ -198,32 +201,25 @@ Evitaremos fazer isso:
 <link rel="stylesheet" href="nomedoarquivo03.css" media="all">
 <link rel="stylesheet" href="nomedoarquivo04.css" media="all">
 
-<script async src="js/nomedoarquivo01.js"></script>
-<script async src="js/nomedoarquivo02.js"></script>
-<script async src="js/nomedoarquivo03.js"></script>
-<script async src="js/nomedoarquivo04.js"></script>
+<script src="js/nomedoarquivo01.js"></script>
+<script src="js/nomedoarquivo02.js"></script>
+<script src="js/nomedoarquivo03.js"></script>
+<script src="js/nomedoarquivo04.js"></script>
 ``` 
 
 Faremos isso:
 ```
-<link rel="stylesheet" href="main.css" media="all">
+<link rel="stylesheet" href="css/main.css" media="all">
 
-<script async src="js/main.js"></script>
+<script src="js/main.js"></script>
 ```
 
-- <strong>Utilizar sempre a última versão do jQuery</strong>: Para evitar utilizar uma versão do jQuery antiga, ou que tenha bugs, iremos sempre utilizar a última versão do jQuery, uns optam utilizar o <a href="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" target="_blank"> cdn da google </a> outros optam por fazer o download direto pelo site do <a href="http://jquery.com/" target="_blank">jQuery</a>.
-
-Como forma de "segurança" iremos mencionar o cdn da google e caso ele não funcione ou esteja fora do ar, irá utilizar o nosso dentro da pasta js, o código ficará assim:
-
-```
-<script async src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-```
 
 - <strong>Spritesheets</strong>: A utilização de spritesheets evita que o browser faça diversas requisições para verificar as imagens, sem falar na performance que o usuário ganha ao navegar no site, pois irá parecer que o site é mais rápido. 
 <a href="http://spritepad.wearekiss.com/" target=_blank>Link</a> 
 
-- <strong>Otimizar as imagens</strong>: Ao se utilizar imagens com extensão .png o ideal é otimiza-las, pois elas contém informações que não são importantes para o usuário e muito menos para o servidor. Existem links na web que fazem esse trabalho para você: <a href="http://tinypng.org/" target="_blank"> Link </a>.
+- <strong>Otimizar as imagens</strong>: Ao se utilizar imagens com extensão .png o ideal é otimiza-las, pois elas contém informações que não são importantes para o usuário e muito menos para o servidor. Mesmoa após exportar pra web a imagem do photoshop, ela pode conter informações que não são necessárias, e para isso existem links na web que fazem esse trabalho de "retirar o resto das informações" para você: <a href="http://tinypng.org/" target="_blank"> Link </a>.
+
 Nem todo projeto é feito só com imagens em .png , caso você precise trabalhar com imagens em .jpeg é aconselhável utilizar JPEGs progressivos. Como fazer?
 
 No photoshop: 
@@ -231,12 +227,6 @@ SAVE AS -> ESCOLHA O FORMATO .jpg -> NA TELA QUE SE ABRE (FORMAT OPTIONS) VOCÊ 
 
 E pronto, sua imagem está um .jpg progressivo e irá aparecer de forma gradativa para o usuário, melhorando o carregamento.
 
-
-- <strong>Para evitar deixar cache local, utiliza-se o parâmetro</strong>: 
-
-```
-<link rel="stylesheet" href="css/nomedoarquivo.css?i=<?php echo rand(); ?>">
-```
 
 - <strong>Gzip</strong>: Boa parte do conteúdo que trafegamos em um site é texto (HTML, CSS, JavaScript, JSON, XML etc). Para esse tipo de conteúdo, é uma boa prática habilitar a compressão GZIP no servidor, que tem como função comprimir os dados do servidor antes de enviar para o navegador do usuário através da rede. É como "zipar" os arquivos antes de enviar, isso faz com que os arquivos fiquem bem menores. Para isso, é feito uma configuração no arquivo do seu servidor, como modelo utilizarei o servidor Apache, para realizar esse procedimento, iremos ediar o arquivo <code> .htaccess </code> para habilitar o deflate.
 
@@ -248,7 +238,8 @@ AddOutputFilterByType DEFLATE text/css
 AddOutputFilterByType DEFLATE application/javascript
 ```
 
-- <strong>Ferramentas para diagnóstico</strong>: Após finalizar o seu projeto é indicado você diagnostica-lo para saber o resultado final dele, saber se o mesmo está carregando de forma rápida, se existe alguma técnica que você pode não ter feito que seria ideal, etc.. Para isso existem ferramentas online, ou extensões para browsers que são instaladas e lhe dão essas informações.  Os links que estão aqui são relacionados ao PageSpeed do google, que é o que utilizo e sempre me deu dicas e informações precisas, caso não goste ou não queria utilizar, uma rápida pesquisa na internet sobre o gênero, irá encontrar muita coisa útil.
+- <strong>Ferramentas para diagnóstico</strong>: Após finalizar o seu projeto é indicado você diagnostica-lo para saber o resultado final dele, saber se o mesmo está carregando de forma rápida, se existe alguma técnica que você pode não ter feito que seria ideal, etc.. Para isso existem ferramentas online, ou extensões para browsers que são instaladas e lhe dão essas informações.  
+Os links que estão aqui são relacionados ao PageSpeed do google, que é o que utilizo e sempre me deu dicas e informações precisas, caso não goste ou não queria utilizar, uma rápida pesquisa na internet sobre o gênero, irá encontrar muita coisa útil.
 
 Extensão para o navegador Chrome: <a href="https://developers.google.com/speed/pagespeed/insights_extensions" target="_blank">Link</a>. <br>
 

@@ -59,7 +59,7 @@ Estrutura básica das pastas do projeto:
 Abaixo uma visão geral de cada parte e como usa-las:
 
 
-### Arquivos 
+### arquivos 
 
 
 Neste diretório, irá conter todos os arquivos relacionados ao projeto, briefing, imagens não utilizadas, PSD'S, fontes ou qualquer outra coisa relacionado ao projeto etc..  
@@ -162,14 +162,10 @@ Este é o esqueleto padrão que utilizo em meus projetos, basicamente são chama
 
 #### meta-tags
 
-1. Charset deve vim antes de qualquer código dentro do head para evitar problemas de segurança, inclusive antes do 'title' .
+1. Meta tag http-equiv para o modelo de compatibilidade deve ser inserida logo após o charset. <a href="http://www.w3.org/International/O-charset.pt-br.php"> mais informações</a>
 
-1. Meta tag http-equiv para o modelo de compatibilidade deve ser inserida logo após o charset.  
-
-<a href="http://www.w3.org/International/O-charset.pt-br.php"> mais informações</a>
-
-3. É possivel que o usuário não esteja utilizando a engine mais recente do seu navegador, para corrigir isso utiliza-se da meta tag
-"meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" principalmente para usuários do IE, para fazer com que a engine do seu navegador seja a mais recente. Essa meta tag "diz que" o usuário deve utilizar a engine mais recente do seu navegador, caso contrário utilize a do chrome, garatindo uma experiência para o navegador e o usuário melhor possível.
+2. É possivel que o usuário não esteja utilizando a engine mais recente do seu navegador, para corrigir isso utiliza-se da meta tag
+"meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" principalmente para usuários do IE, para fazer com que a engine do seu navegador seja a mais recente. Essa meta tag "diz que" o usuário deve utilizar a engine mais recente do seu navegador, caso contrário utilize a do chrome, garantindo uma experiência para o navegador e o usuário melhor possível.
 
 4. A meta tag "meta name="viewport" content="width=device-width, initial-scale=1.0" é utilizada para "dizer ao navegador" para usar como largura do layout, a largura da viewport, desativando a escala inicial, isso faz com que o site fique flexível se baseando no tamanho do aparelho.
 

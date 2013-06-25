@@ -83,7 +83,6 @@ body{
 }
 
 /*Personalizar o estado :focus do usuário*/
-#formContato input:focus{
+input:focus{
 	box-shadow: 1px 1px 3px rgba(156,19,38,0.8);
 }
-

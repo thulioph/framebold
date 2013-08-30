@@ -2,7 +2,9 @@
 #FrameBold
 
 O intúito de realizar este "guia" não é imitar ou copiar, fiz este documento para minha utilização e para os desenvolvedores da empresa onde trabalho que é a <a href="http://www.boldcomunicacao.com.br" target="_blank">Bold Comunicação</a> pois muitos não conhecem os links ou as ferramentas que citei aqui, o propósito disso é ser um guia rápido onde irá reunir coisas que utilizamos ou que podemos utilizar para nos ajudar nos projetos.
-Será atualizado a medida do possível por mim, ou por outros que quiserem contribuir com o projeto. 
+Será atualizado a medida do possível por mim, ou por outros que quiserem contribuir com o projeto. <br>
+
+Neste projeto, você irá encontrar alguns arquivos css, js, img referente as bibliotecas que utilizo, elas estão com as configurações (css, local da imagem) padrão, caso necessite personalizar de uma outra forma, verifique a documentação do plugin para melhor uso.
 
 Author: @thulioph_ <br>
 Date: 07/04/2013 <br>
@@ -32,10 +34,12 @@ No final deste documento, existe uma sessão sobre dicas que foram retiradas a p
 Estrutura básica das pastas do projeto:
 
 ```
-
 ├── arquivos
 ├── css
 │   ├── main.css
+│   └── fonts
+│       ├── nome-da-font
+│       └── nome-da-font
 ├── doc
 ├── img
 ├── inc
@@ -51,6 +55,7 @@ Estrutura básica das pastas do projeto:
 │       └── mask_input.js
 ├── .htaccess
 ├── 404.html
+├── apple-touch-icon.png
 ├── favicon.ico
 ├── humans.txt
 └── index.php
@@ -73,6 +78,14 @@ Neste diretório, irá conter todos os arquivos relacionados ao projeto, briefin
 Este diretório deve conter todos os arquivos do seu projeto CSS. 
 
 Como padrão, sempre utilizo uma única folha de estilo, bem comentada e dividida por partes de formatação. Esse arquivo inclui o reset e umas formatações que gosto de fazer sempre. 
+
+- fonts
+
+Este diretório deverá conter todas as fontes utilizadas em seu projeto, separadas por pastas.
+Para converter as fontes, pode-se utilizar: 
+[Link 1](http://everythingfonts.com/font-face#.UcoAVfmsim4) - 
+[Link 2](http://convertfonts.com/)
+[Link 3](http://www.fontsquirrel.com/tools/webfont-generator)
 
 =================================================================================================================================================
 
@@ -102,6 +115,7 @@ Para facilitar o entendimento e a localização no código, utilizo como padrão
 ### js
 
 Este diretório deve conter todos os arquivos do seu projeto JS. Bibliotecas, plugins, e código personalizado podem ser incluídos aqui. 
+obs: estou incluindo algumas bibliotecas que costumo utilizar em projetos, ao utilizar procure sempre mante-las atualizadas.
 
 - vendor
 

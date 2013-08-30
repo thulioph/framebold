@@ -3,7 +3,7 @@
     <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
     <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
     <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-<html lang="pt-BR"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" lang="pt-BR"> 
     <head>
         <meta charset="utf-8">
         <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
@@ -40,11 +40,12 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
         <!-- OPEN GRAPH -->
-        <meta property="og:type"  content="website" />
-        <meta property="og:url" content="http://www.dominio.com.br" />
-        <meta property="og:title" content="Comunicação Estratégica">
-        <meta property="og:description" content="VLM Acessoria" />
-        <meta property="og:image" content="http://www.vlm.com.br/img/img-facebook-200X200.png" />
+        <meta property='og:title' content='Título do site' />
+        <meta property='og:description' content='Um breve resumo da descrição do site' />
+        <meta property='og:url' content='http://url-do-site' />
+        <meta property='og:image' content='http://url-do-site/img/img-og-facebook-200x200.png'/>
+        <meta property='og:type' content='website' />
+        <meta property='og:site_name' content='Nome do site' />
     </head>
 
     <body>

@@ -1,17 +1,30 @@
 <!DOCTYPE html>
+    <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+    <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+    <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+    <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <html lang="pt-BR"> 
     <head>
+        <meta charset="utf-8">
         <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
 
         <!--modo de compatibilidade com o chrome, caso não tenha, baixa o frame no inicio do body-->
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-        <title></title>
+        <title>Titulo do meu projeto</title>
 
-        <!-- MOTORES DE BUSCA -->
-        <meta name="description" content="Front-End Developer">
-        <meta name="author" content="thulioph | Bold Comunicação">
-        <meta name="keywords" content="vlm, acessoria, cobrança, recife">
+        <!-- META TAGS -->
+        <meta name="Description" content="Bold Comunicação, Produtora web, SEO, Comunicação Digital, Criação de Web Sites, Portais, Flash Site, Sistemas Bluetooth, Touchscreen, E-commmerce // Web Agency // Recife - Pernambuco - Brasil // +55 81 3062.0022"/>
+        <meta name="Keywords" content="agência digital, agência web, SEO, comunicação digital, website, portais, design, flash, touch screen, mídia digital, e-commerce, comércio eletrônico, b2b, b2c, publicidade, ações estratégica, web content management, content management system, CMS"/>
+        <meta name="DC.publisher" content="Cappen" />
+        <meta name="DC.creator.address" content="contato@boldcomunicacao.com.br" />
+        <meta name="robots" content="all" />
+        <meta name="author" content="thulioph | Bold Comunicação" />
+        <meta name="rating" content="general" />
+        <meta name="distribution" content="global" />
+        <meta name="copyright" content="boldcomunicacao.com.br - Todos os direitos reservados" />
+        <meta name="language" content="en, pt-br" />
+
 
         <!-- VIEWPORT -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,23 +33,23 @@
         <link rel="stylesheet" href="css/main.css" media="all">
         
         <!-- HUMANS -->
-        <link type="text/plain" rel="author" href="http://www.boaterraveiculos.com.br/humans.txt" />
+        <link type="text/plain" rel="author" href="http://www.dominio.com.br/humans.txt" />
 
-        <!-- FAVICON -->
-        <link rel="shortcut icon" href="favicon.ico">
+        <!-- FAVICON E TOUCH ICON IN THE ROOT DIRECTORY -->
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
         <!-- OPEN GRAPH -->
         <meta property="og:type"  content="website" />
-        <meta property="og:url" content="http://www.vlm.com.br" />
-        <meta property="og:title" content="VLM Acessoria">
+        <meta property="og:url" content="http://www.dominio.com.br" />
+        <meta property="og:title" content="Comunicação Estratégica">
         <meta property="og:description" content="VLM Acessoria" />
         <meta property="og:image" content="http://www.vlm.com.br/img/img-facebook-200X200.png" />
     </head>
 
     <body>
         <!--[if lt IE 7]>
-            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+            <p class="chromeframe">Você está usando um browser <strong>ultrapassado</strong>. Por favor <a href="http://browsehappy.com/">atualize o browser</a> ou <a href="http://www.google.com/chromeframe/?redirect=true">ative o Frame do Google Chrome</a> para melhorar a experiência.</p>
         <![endif]-->
 
 
@@ -47,12 +60,9 @@
         
 
         <!-- ======== FIM DO PROJETO ======== -->
-
-
-        <script src="js/vendor/jquery-1.9.1.min.js"></script>
         
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-        
+        <!-- SCRIPTS -->
+        <?php include("inc/scripts.inc.php") ?>
+
     </body>
 </html>

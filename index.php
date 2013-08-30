@@ -3,7 +3,7 @@
     <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
     <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
     <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" lang="pt-BR"> 
+<html xmlns:og="http://ogp.me/ns#" lang="pt-BR"> 
     <head>
         <meta charset="utf-8">
         <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >

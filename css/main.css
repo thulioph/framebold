@@ -4,12 +4,12 @@
 **
 **  @Company: Bold Comunicação; - www.boldcomunicacao.com.br
 **
-**  @Project Name: Nome do Projeto;
-**  @url: http://www.sitedoprojeto.com.br;
+**  @Project Name: Nome do projeto;
+**  @url: http://www.dominio.com.br/;
 **
 **
 **  @Project Organizers Team:   
-**      @Member Thulio Philipe (Front-end Developer);
+**      @Member Thulio Philipe (Web Design);
 **      @Member Thulio Philipe (Back-end Developer);
 **      @Member Thulio Philipe (Designer);
 **
@@ -36,13 +36,18 @@ table{border-collapse:collapse;border-spacing:0}
    FORMATAÇÃO GERAL
    ========================================================================== */
 
-/*Definindo o body com font 10px, pode-se trabalhar com unidade EM. 
-Técnica de Bernard de Luna*/
+/*
+  Definindo o body com font 10px, pode-se trabalhar com unidade EM.
+  Declarar a fonte padrão que será utilizada no projeto
+*/
 body{
-	font-size: 10px;
+  font-size: 10px;
+  font-family: "calibri", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
-/*Personalização das cores na seleção de texto do site*/
+/*
+  Personalização das cores na seleção de texto do site
+*/
 ::-moz-selection {
     background: #af2a3d;
     text-shadow: none;
@@ -55,7 +60,9 @@ body{
     color: #f5f1e8;
 }
 
-/*Personalização do placeholder*/
+/*
+  Personalização do placeholder
+*/
 ::-webkit-input-placeholder {
    color: #434343;
 }
@@ -72,7 +79,9 @@ body{
    color: #434343;  
 }
 
-/*Declarações para fontes externas, seguir essa ordem para melhor visualização em diversos navegadores*/
+/*
+  Declarações para fontes externas, seguir essa ordem para melhor visualização em diversos navegadores
+*/
 @font-face {
     font-family: 'SourceSansProRegular';
     src: url('fonts/sourcesanspro-regular.eot');
@@ -82,7 +91,14 @@ body{
          url('fonts/sourcesanspro-regular.svg#SourceSansProRegular') format('svg');
 }
 
-/*Personalizar o estado :focus do usuário*/
+/*
+  Personalizar o estado :focus do usuário
+*/
 input:focus{
-	box-shadow: 1px 1px 3px rgba(156,19,38,0.8);
+  box-shadow: 1px 1px 3px rgba(156,19,38,0.8);
+}
+
+select:focus{
+  border: none;
+  outline: none;
 }

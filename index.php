@@ -14,7 +14,7 @@
         <!-- META TAGS -->
         <meta name="Description" content="Bold Comunicação, Produtora web, SEO, Comunicação Digital, Criação de Web Sites, Portais, Flash Site, Sistemas Bluetooth, Touchscreen, E-commmerce // Web Agency // Recife - Pernambuco - Brasil // +55 81 3062.0022"/>
         <meta name="Keywords" content="agência digital, agência web, SEO, comunicação digital, website, portais, design, flash, touch screen, mídia digital, e-commerce, comércio eletrônico, b2b, b2c, publicidade, ações estratégica, web content management, content management system, CMS"/>
-        <meta name="DC.publisher" content="Cappen" />
+        <meta name="DC.publisher" content="Bold Comunicação" />
         <meta name="DC.creator.address" content="contato@boldcomunicacao.com.br" />
         <meta name="robots" content="all" />
         <meta name="author" content="thulioph | Bold Comunicação" />

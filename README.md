@@ -5,7 +5,7 @@ Com ele você terá acesso a organização dos meus diretórios, alguns plugins 
  
 ## Instalação
  
-`cd minha-pasta-de-projetos`
+`cd minha-pasta-de-projetos` <br>
 `git clone https://github.com/thulioph/framebold.git`
  
 ## Esqueleto

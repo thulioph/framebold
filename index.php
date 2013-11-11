@@ -5,11 +5,9 @@
     <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <html xmlns:og="http://ogp.me/ns#" lang="pt-BR"> 
     <head>
+        <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
         <meta charset="utf-8">
         <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
-
-        <!--modo de compatibilidade com o chrome, caso não tenha, baixa o frame no inicio do body-->
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
         <title>Titulo do meu projeto</title>
 

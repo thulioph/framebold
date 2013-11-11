@@ -62,7 +62,7 @@ Estrutura do template <br>
 4. Dê um push na branch: `git push origin minhas-melhorias`
 5. Envie um pull request.
  
-## Credits
+## Creditos
  
 A todos os grupos e amigos do Facebook, vocês tem contribuido e muito no meu aprendizado :P
  

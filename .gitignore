@@ -1,19 +1,10 @@
-# Ignorar todos os diretórios e arquivos em um diretório #
-arquivos/**/* 
-arquivos/**/ 
-arquivos/
-img/**/*
-img/**
-img/
-css/fonts/**/*
-css/fonts/**
-css/fonts
-
 # Gerais #
 ######################
 *.PSD
 *.psd
 *.png
+*.gitignore
+*.git
 
 # Compilados #
 ###################

@@ -1,3 +1,18 @@
+# URS Amigáveis
+
+<IfModule mod_rewrite.c>
+
+    RewriteEngine On
+    RewriteRule ^home/?$ /uchoa/index.php [NC,L]
+    RewriteRule ^empresa/?$ /uchoa/empresa.php [NC,L]
+    RewriteRule ^servicos/?$ /uchoa/servicos.php [NC,L]
+    RewriteRule ^produtos/?$ /uchoa/produtos.php [NC,L]
+    RewriteRule ^noticias/?$ /uchoa/noticias.php [NC,L]
+    RewriteRule ^fale-conosco/?$ /uchoa/fale-conosco.php [NC,L]
+    RewriteRule ^videos/?$ /uchoa/videos.php [NC,L]
+</IfModule>
+
+
 # Apache configuration file
 # httpd.apache.org/docs/2.2/mod/quickreference.html
 

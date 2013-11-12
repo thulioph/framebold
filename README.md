@@ -44,6 +44,7 @@ Estrutura do template <br>
 ├── README.md
 └── index.php
 ```
+
 ## Resumo do diretório
  
 * arquivos - todos os arquivos relacionados com o projeto; <br>

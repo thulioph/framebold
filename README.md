@@ -35,6 +35,8 @@ Estrutura do template <br>
 │       └── mask_input.js
 ├── .htaccess
 ├── .gitignore
+├── .bowerrcc
+├── bower.json
 ├── 404.html
 ├── apple-touch-icon-ipad.png
 ├── apple-touch-icon-iphone4.png
@@ -54,6 +56,8 @@ Estrutura do template <br>
 * js - todo javascript utilizado no projeto ficará no arquivo `main.js` e a pasta vendor irá conter os plugins utilizados ; <br>
 * .htaccess - arquivo de configuração do servidor apache; <br>
 * humans.txt - informações sobre membros envolvidos no projeto, tecnologia utilizada, última atualização, etc..;
+* bower.json - arquivo de configuração do bower, com algumas informações das dependências, autor do projeto, versão, etc..;
+* .bowerrcc - arquivo de configuração para alterar o caminho das dependências instaladas no projeto;
 
 ## Como contribuir?
  

@@ -24,14 +24,14 @@
         <meta name="copyright" content="boldcomunicacao.com.br - Todos os direitos reservados" />
         <meta name="language" content="en, pt-br" />
 
-
         <!-- VIEWPORT -->
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
         <!-- CSS -->
-        <link rel="stylesheet" href="css/main.css" media="all">
+        <link rel="stylesheet" href="build/css/reset.css" media="all">
+        <link rel="stylesheet" href="build/css/main.min.css" media="all">
 
         <!-- HUMANS -->
         <link type="text/plain" rel="author" href="http://www.dominio.com.br/humans.txt" />
@@ -49,6 +49,9 @@
         <meta property='og:image' content='http://url-do-site/img/img-og-facebook-200x200.png'/>
         <meta property='og:type' content='website' />
         <meta property='og:site_name' content='Nome do site' />
+
+        <!-- LIVERELOAD -->
+        <script src="http://localhost:35729/livereload.js"></script>
     </head>
 
     <body>

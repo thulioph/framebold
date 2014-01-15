@@ -27,8 +27,8 @@
 
 /* SITE */
 
-  Last update: 2013/06/17
+  Last update: 2014/01/15
   Doctype: HTML5
   IDE: Sublime Text 2, FileZilla, Photoshop, Chrome Developer Tools
-  Standards: HTML5, CSS3
+  Standards: HTML5, CSS3, SASS
   Components: jQuery

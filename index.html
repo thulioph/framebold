@@ -19,7 +19,7 @@
 
         <header>
           <h1>Framebold</h1>
-          <h2>Desenvolvido a partir de problemas diários.</h2>
+          <h2>Template para início de projetos front-end</h2>
         </header>
 
         <section id="downloads" class="clearfix">
@@ -31,47 +31,57 @@
         <hr>
 
         <section id="main_content">
-          <h3>
-<a name="framebold" class="anchor" href="#framebold"><span class="octicon octicon-link"></span></a>Framebold</h3>
+          <h1>
+<a name="framebold" class="anchor" href="#framebold"><span class="octicon octicon-link"></span></a><a href="#framebold" title="Framebold">Framebold</a>
+</h1>
 
 <p>Considere o Framebold como um template de pré-projetos que utilizo no meu dia-a-dia. <br>
-Com ele você terá acesso a organização dos meus diretórios, alguns plugins que utilizo, assim como uma estrutura de HTML, um CSS já com algumas coisas que utilizo e umas configurações em diversos arquivos que tenho como base para início de projeto.</p>
+Com ele você terá acesso a organização dos meus diretórios, alguns plugins que utilizo, assim como uma estrutura de <code>html</code>, um <code>css</code> já com algumas coisas que utilizo e umas configurações em diversos arquivos que tenho como base para início de projeto.</p>
 
-<h3>
-<a name="instala%C3%A7%C3%A3o" class="anchor" href="#instala%C3%A7%C3%A3o"><span class="octicon octicon-link"></span></a>Instalação</h3>
+<h2>
+<a name="instala%C3%A7%C3%A3o" class="anchor" href="#instala%C3%A7%C3%A3o"><span class="octicon octicon-link"></span></a><a href="#instalacao" title="Instalação">Instalação</a>
+</h2>
 
-<p><code>cd minha-pasta-de-projetos</code> <br><code>git clone https://github.com/thulioph/framebold.git</code></p>
+<p><code>cd minha-pasta-de-projetos</code> <br><code>$ git clone https://github.com/thulioph/framebold.git</code></p>
 
-<h3>
-<a name="esqueleto" class="anchor" href="#esqueleto"><span class="octicon octicon-link"></span></a>Esqueleto</h3>
+<h2>
+<a name="esqueleto" class="anchor" href="#esqueleto"><span class="octicon octicon-link"></span></a><a href="#esqueleto" title="Esqueleto">Esqueleto</a>
+</h2>
 
-<p>Estrutura do template <br></p>
+<p>Estrutura do template.
+<br></p>
 
 <pre><code>├── arquivos
-├── css
-│   ├── main.css
-│   └── plugins
-│       └── css-do-plugin
-│   └── fonts
-│       └── pasta-nome-da-font
-├── img
+├── build
+│   ├── css
+│   │    └── fonts
+│   │    └── reset.css
+│ ├── img
+│   └── js
 ├── inc
 │   └── head.inc.php
-├── js
-│   ├── main.js
-│   └── vendor
-│       ├── modernizr.min.js
-│       ├── colorbox.min.js
-│       ├── head.min.js
-│       ├── jquery-1.9.1.js
-│       ├── jquery.cycle.all.js
-│       ├── jquery.lazyload.min.js
-│       └── mask_input.js
-├── .htaccess
-├── .gitignore
+├── src
+│   ├── css
+│   │    └── plugins
+│ │    │    └── colorbox.css
+│   │    └── main.css
+│ ├── img
+│   │    └── colorbox
+│ ├── js
+│   │    └── vendor
+│ │    │    └── colorbox.min.js
+│ │    │    └── head.min.js
+│ │    │    └── jquery-1.10.2.min.js
+│ │    │    └── jquery.cycle.all.js
+│ │    │    └── jquery.lazyload.min.js
+│ │    │    └── mask_input.js
+│   │    └── main.js
+│   └── scss
 ├── .bowerrcc
-├── bower.json
+├── .gitignore
+├── .htaccess
 ├── 404.html
+├── bower.json
 ├── apple-touch-icon-ipad.png
 ├── apple-touch-icon-iphone4.png
 ├── apple-touch-icon.png
@@ -81,27 +91,78 @@ Com ele você terá acesso a organização dos meus diretórios, alguns plugins 
 └── index.php
 </code></pre>
 
-<h3>
-<a name="resumo-do-diret%C3%B3rio" class="anchor" href="#resumo-do-diret%C3%B3rio"><span class="octicon octicon-link"></span></a>Resumo do diretório</h3>
+<h2>
+<a name="resumo-do-diret%C3%B3rio" class="anchor" href="#resumo-do-diret%C3%B3rio"><span class="octicon octicon-link"></span></a><a href="#resumo" title="Resumo do diretório">Resumo do diretório</a>
+</h2>
+
+<h4>
+<a name="arquivos" class="anchor" href="#arquivos"><span class="octicon octicon-link"></span></a><a href="#arquivos" title="Arquivos">arquivos</a>
+</h4>
+
+<p>Pasta contendo todos os arquivos relacionados ao projeto como: .psd, .txt, arquivos diversos, etc..
+<br></p>
+
+<h4>
+<a name="build" class="anchor" href="#build"><span class="octicon octicon-link"></span></a><a href="#build" title="Build">build</a>
+</h4>
+
+<p>Pasta contendo todos os arquivos já otimizados  e prontos para serem enviados para o servidor;
+<br></p>
 
 <ul>
-<li>arquivos - todos os arquivos relacionados com o projeto; <br>
-</li>
-<li>css - todo o css envolvido no projeto, as subpastas são para o css dos plugins e as fonts ficam em uma pasta a parte; <br>
-</li>
-<li>img - todas as imagens que serão utilizadas no projeto; <br>
-</li>
-<li>inc - diretório contendo os includes; <br>
-</li>
-<li>js - todo javascript utilizado no projeto ficará no arquivo <code>main.js</code> e a pasta vendor irá conter os plugins utilizados ; <br>
-</li>
-<li>.htaccess - arquivo de configuração do servidor apache; <br>
-</li>
-<li>humans.txt - informações sobre membros envolvidos no projeto, tecnologia utilizada, última atualização, etc..;</li>
-<li>bower.json - arquivo de configuração do bower, com algumas informações das dependências, autor do projeto, versão, etc..;</li>
-<li>.bowerrcc - arquivo de configuração para alterar o caminho das dependências instaladas no projeto;</li>
-</ul><h3>
-<a name="como-contribuir" class="anchor" href="#como-contribuir"><span class="octicon octicon-link"></span></a>Como contribuir?</h3>
+<li>
+<code>css</code> - nesta pasta será despejado o css minificado e desminificado, fica ao seu critério qual utilizar, já contem o arquivo <em>reset.css</em> e a pasta para inserir as fontes do projeto.</li>
+<li>
+<code>img</code> - nesta pasta será despejada todas as imagens já otimizadas.</li>
+<li>
+<code>js</code> - nesta pasta será despejado todos os javascripts, minificados, concatenados e validados.</li>
+</ul><h4>
+<a name="inc" class="anchor" href="#inc"><span class="octicon octicon-link"></span></a><a href="#inc" title="inc">inc</a>
+</h4>
+
+<p>Pasta contendo todos os includes do projeto, já contém o <em>head.inc.php</em> com todas as meta tags e chamadas para arquivos externos.
+Você deve ficar atento para a chamada do livereload, que deverá ser retirada quando enviada para o servidor.
+<br></p>
+
+<h4>
+<a name="src" class="anchor" href="#src"><span class="octicon octicon-link"></span></a><a href="#src" title="src">src</a>
+</h4>
+
+<p>Pasta contendo todos os arquivos que serão trabalhados antes de otimiza-los e enviar para o servidor.
+<br></p>
+
+<ul>
+<li>
+<code>css</code> - nesta pasta será despejado o css compilado e desminificado para consulta local, fica a seu critério ter esta pasta ou não.</li>
+<li>
+<code>img</code> - esta pasta terá todas as imagens que serão utilizadas no projeto antes de serem otimizadas.</li>
+<li>
+<code>js</code> - esta pasta terá todos os scripts/libs que serão utilizadas no projeto, na raiz existe o arquivo <em>main.js</em> com as chamadas de js e a pasta <em>vendor</em> irá conter os plugins utilizados.</li>
+<li>
+<code>scss</code> - nesta pasta irá conter os arquivos de sass e compass que serão utilizados no projeto.</li>
+<li>
+<code>.bowerrc</code> - arquivo de configuração para alterar o caminho das dependências instaladas no projeto através do bower.</li>
+<li>
+<code>.gitignore</code> - arquivo de configuração para alterar o caminho das dependências instaladas no projeto através do bower.</li>
+<li>
+<code>.htaccess</code> - arquivo de configuração do servidor apache.</li>
+<li>
+<code>404.html</code> - página de Erro 404 que poderá ser personalizada de acordo com o seu projeto.</li>
+<li>
+<code>bower.json</code> - arquivo de configuração do bower, com algumas informações das dependências, autor do projeto, versão, etc.</li>
+<li>
+<code>Gruntfile.js</code> - arquivo de configuração do Grunt.</li>
+<li>
+<code>humans.txt</code> - informações sobre membros envolvidos no projeto, tecnologia utilizada, última atualização, etc.</li>
+<li>
+<code>index.php</code> - arquivo <em>index</em> com estrutura mínima para iniciar o projeto.</li>
+<li>
+<code>Package.json</code> - arquivo de configuração do Grunt.</li>
+<li>
+<code>README.md</code> - arquivo que contém toda a descrição deste documento.</li>
+</ul><h2>
+<a name="como-contribuir" class="anchor" href="#como-contribuir"><span class="octicon octicon-link"></span></a><a href="#contribuir" title="Como contribuir?">Como contribuir?</a>
+</h2>
 
 <ol>
 <li>Faça um fork deste projeto!</li>
@@ -112,7 +173,11 @@ Com ele você terá acesso a organização dos meus diretórios, alguns plugins 
 <li>Dê um push na branch: <code>git push origin minhas-melhorias</code>
 </li>
 <li>Envie um pull request.</li>
-</ol>
+</ol><h2>
+<a name="cr%C3%A9ditos" class="anchor" href="#cr%C3%A9ditos"><span class="octicon octicon-link"></span></a><a href="#creditos" title="Créditos">Créditos</a>
+</h2>
+
+<p>A todos os grupos e amigos do Facebook, vocês tem contribuido e muito no meu aprendizado :P</p>
         </section>
 
         <footer>

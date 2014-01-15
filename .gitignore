@@ -10,6 +10,13 @@ arquivos/**/
 node_modules/**/
 .sass-cache/**/
 
+src/js/vendor/headjs/**/
+src/js/vendor/jquery/**/
+src/js/vendor/jquery-colorbox/**/
+src/js/vendor/jquery.cycle/**/
+src/js/vendor/jquery.lazyload/**/
+src/js/vendor/jquery.maskedinput/**/
+
 # Compilados #
 ###################
 *.com

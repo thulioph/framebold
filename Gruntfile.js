@@ -60,7 +60,7 @@ module.exports = function(grunt) {
 		// Minificar o CSS
 			cssmin: {
 				dist: {
-					src: ['src/scss/main.scss'],
+					src: ['src/sass/main.scss'],
 					dest: 'build/css/main.min.css'
 				}
 			},
@@ -152,7 +152,7 @@ module.exports = function(grunt) {
 			compass: {
 				dev: {
 					options:{
-						sassDir: 'src/scss',
+						sassDir: 'src/sass',
 						cssDir: 'build/css',
 						imagesDir: 'src/img',
 						generatedImagesDir: 'build/img',
@@ -221,5 +221,3 @@ module.exports = function(grunt) {
 		grunt.registerTask('notify', ['php', 'watch', 'jshint', 'uglify', 'cssmin', 'concat', 'imagemin', 'compass', 'notify' ]);
 
 };
-
-

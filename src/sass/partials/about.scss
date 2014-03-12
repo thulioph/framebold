@@ -1,0 +1,66 @@
+@import 'base';
+
+.wrapper-about {
+	div {
+		vertical-align: top;
+		display: inline-block;
+		padding-top: 80px;
+		max-height: 500px;
+	}
+	p {
+		margin-bottom: 30px;
+	}
+}
+.box-slide-primary {
+	width: 315px;
+	height: auto;
+	color: $color-general;
+	vertical-align: middle;
+	font-size: ($fs-normal) + 1.5;
+	font-family: $ff-primary;
+}
+.box-slide-secondary {
+	width: 660px;
+}
+
+
+// box-about
+.box-about {
+	width: 250px;
+	min-height: 250px;
+	display: inline-block;
+	margin: 45px 35px;
+	vertical-align: middle;
+}
+.title-about {
+	text-transform: uppercase;
+	font-size: ($fs-normal) + 1.2;
+	color: $color-secondary;
+	margin-bottom: 40px;
+	font-family: $ff-title;
+}
+.text-about {
+	color: $color-general;
+	font-size: ($fs-normal) + .6;
+	font-family: $ff-secondary;
+	line-height: ($fs-normal) + .2;
+}
+.box-about-list {
+	width: 615px;
+	margin: 45px 0 45px 35px;
+	li {
+		color: $color-general;
+		font-size: ($fs-normal) + .6;
+		font-family: $ff-secondary;
+		text-indent: ($fs-normal) - .6;
+		&::before {
+			content: '';
+			width: 15px;
+			height: 15px;
+			background: url($BASEPATH + 'ok.png') no-repeat;
+			display: inline-block;
+			margin-right: 5px;
+			vertical-align: middle;
+		}
+	}
+}

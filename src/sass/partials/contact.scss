@@ -1,0 +1,122 @@
+@import 'base';
+
+// mapa
+.createMap {
+	width: 100%;
+	height: 500px;
+}
+.title-map {
+	font-family: verdana;
+	font-weight: 800;
+	margin: 5px 0;
+	display: block;
+}
+.address-map {
+	display: block;
+	width: 190px;
+	line-height: ($fs-normal) + .4;
+	margin: 5px 0;
+}
+.link-map {
+	text-decoration: none;
+	color: $color-primary;
+	@include transition(all,.2s, linear, 0s);
+	&:hover {
+		text-decoration: underline;
+		color: $color-secondary;
+	}
+}
+
+// contact
+.box-contact {
+	width: 330px;
+	height: 430px;
+	display: inline-block;
+	vertical-align: middle;
+	// background-color: black;
+}
+.box-contact-us {
+	width: 570px;
+	margin-right: 80px;
+}
+.title-box-contact {
+	text-transform: uppercase;
+	font-size: ($fs-normal) + 2.8;
+	color: $color-secondary;
+	margin-bottom: 20px;
+	font-family: $ff-secondary;
+}
+.input-primary,
+.textarea {
+	width: 290px;
+	height: 40px;
+	background-color: #ffffff;
+	color: $color-general;
+	padding: 10px 5px;
+	font-size: ($fs-normal) + .4;
+	font-family: $ff-primary;
+	display: block;
+	margin-bottom: 10px;
+}
+.textarea {
+	width: 290px;
+	height: 126px;
+	margin-bottom: 0;
+}
+.submit-primary {
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+	background-color: #f49729;
+	color: #ffffff;
+	text-align: center;
+	font-size: ($fs-normal) + .2;
+	display: inline-block;
+	margin: 10px 0 0 250px;
+
+	@include apr(none);
+	@include bdr(100%);
+	@include transition(all, .2s, linear, 0s);
+	&:focus,
+	&:active {
+		outline: none;
+	}
+	&:hover {
+		background-color: $color-primary;
+	}
+}
+.box-info-contact {
+	width: 260px;
+	height: 180px;
+	position: absolute;
+	margin: -325px 0 0 310px;
+	color: $color-general;
+	font-size: ($fs-normal) + .8;
+	font-family: $ff-secondary;
+	a {
+		text-decoration: none;
+		color: $color-primary;
+		@include transition(all,.2s, linear, 0s);
+		&:hover {
+			text-decoration: underline;
+			color: $color-secondary;
+		}
+	}
+}
+.box-info-work {
+	color: $color-general;
+	font-size: ($fs-normal) + .8;
+	font-family: $ff-secondary;
+	a {
+		text-decoration: none;
+		color: $color-primary;
+		@include transition(all,.2s, linear, 0s);
+		&:hover {
+			text-decoration: underline;
+			color: $color-secondary;
+		}
+	}
+}
+.form-work {
+	margin-top: 10px;
+}

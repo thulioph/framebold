@@ -1,0 +1,121 @@
+@import 'base';
+
+footer {
+	width: 100%;
+	height: 290px;
+	background-color: $color-secondary;
+}
+
+// box-footer
+.nav-secondary {
+	text-align: center;
+}
+.box-footer {
+	display: inline-block;
+	margin: 10px 80px 0 0;
+	width: 210px;
+	height: 185px;
+	vertical-align: middle;
+	&:last-child {
+		margin-right: 0;
+	}
+}
+.img-ico-box-footer {
+	width: 40px;
+	height: 40px;
+	margin: 0 10px 0 -130px;
+	vertical-align: middle;
+	background-color: #6ca92a;
+	display: inline-block;
+	color: #ffffff;
+
+	@include f-smooth(antialiased);
+	@include bdr(100%);
+}
+.title-box-footer{
+	font-family: $ff-secondary;
+	font-size: ($fs-normal) + .8;
+	color: #ffffff;
+	text-transform: uppercase;
+	text-align: left;
+	margin-bottom: 20px;
+}
+.list-footer {
+	li {}
+	a {
+		display: block;
+		color: #fdfeca;
+		font-size: ($fs-normal) + .5;
+		font-family: $ff-secondary;
+		margin-bottom: 10px;
+		text-align: left;
+
+		@include transition(all, .1s, ease-in-out, 0s);
+		&:hover {
+			margin-left: 5px;
+		}
+	}
+}
+.box-atendimento {
+	background-color: #506825;
+	width: 315px;
+	height: 260px;
+	margin: 0 0 0 70px;
+	h3 {
+		background-color: #40531e;
+		padding: 40px 60px 40px 60px;
+		margin-bottom: 10px;
+	}
+}
+.text-footer {
+	display: inline-block;
+	float: left;
+	margin-top: -45px;
+	width: 620px;
+	color: #80a73a;
+	text-align: left;
+	font-size: ($fs-normal) + .2;
+	font-family: $ff-secondary;
+	line-height: ($fs-normal) + .2;
+}
+.info-treatment{
+	width: 256px;
+	padding: 10px 20px 10px 50px;
+	background-color: #ffffff;
+	display: block;
+	color: $color-general;
+	font-size: ($fs-normal) + 1;
+	font-family: $ff-secondary;
+	text-align: center;
+	margin: 0 10px 10px 30px;
+	&::before {
+		content: '';
+		width: 40px;
+		height: 40px;
+		color: #ffffff;
+		text-align: center;
+		display: inline-block;
+		position: absolute;
+		margin: -10px 0 0 -59px;
+	}
+}
+.info-number {
+	&::before {
+		margin-left: -72px;
+		padding-top: 10px;
+		height: 30px;
+		background: #80a73a url($BASEPATH + 'ico-tel.png') 10px no-repeat;
+	}
+}
+.info-email {
+	&::before {
+		background: #80a73a url($BASEPATH + 'ico-email.png') 7px no-repeat;
+	}
+}
+.info-days {
+	color: #fff;
+	font-size: ($fs-normal) + .5;
+	font-family: $ff-secondary;
+	text-align: center;
+	line-height: ($fs-normal) + .2;
+}

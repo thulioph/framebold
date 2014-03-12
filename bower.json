@@ -1,26 +1,24 @@
 {
-  "name": "Framebold",
-  "version": "1.0.0",
-  "homepage": "http://thulioph.github.io/framebold/",
+  "name": "herbalist",
+  "version": "0.0.0",
   "authors": [
-    "thulioph | thulioph.com"
+    "thulioph | thulioph.com",
+    "Sérgio Hampel | sergiohampel.com"
   ],
-  "description": "Template para início de projetos FrontEnd",
+  "main": "src/js/main.js",
   "license": "MIT",
-  "private": true,
+  "homepage": "http://herbalist.com.br",
   "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
+    "libs/js/",
     "test",
     "tests"
   ],
-  "devDependencies": {
-    "jquery": "~2.0.3",
-    "jquery.cycle": "*",
-    "jquery.lazyload": "~1.9.0",
-    "jquery.maskedinput": "~1.3.1",
-    "jquery-colorbox": "~1.4.33",
-    "headjs": "*"
+  "dependencies": {
+    "OwlCarousel": "https://github.com/OwlFonk/OwlCarousel",
+    "owlcarousel": "~1.3.2",
+    "mixitup": "~2.0.4"
   }
 }

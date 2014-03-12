@@ -1,0 +1,19 @@
+// reset
+@import 'compass/reset';
+
+// sprite generator
+@import 'sprite-generator';
+
+// partials
+@import 'partials/fonts';
+@import 'partials/general';
+@import 'partials/modal';
+
+@import 'partials/footer';
+@import 'partials/header';
+
+// pages
+@import 'partials/home';
+@import 'partials/about';
+@import 'partials/products';
+@import 'partials/contact';

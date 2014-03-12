@@ -1,60 +1,66 @@
-<!DOCTYPE html>
-    <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-    <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-    <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-    <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-<html xmlns:og="http://ogp.me/ns#" lang="pt-BR">
-    <head>
-        <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
-        <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<?php include("Constants.php"); ?>
 
-        <meta charset="utf-8" />
+<!doctype html>
+<html xmlns:og="http://ogp.me/ns#" lang="pt-br">
+<head>
+    <meta charset="utf-8" />
 
-        <title>Titulo do meu projeto</title>
+    <title><?php echo _TITLE ?></title>
 
-        <!-- META TAGS -->
-        <meta name="Description" content="Bold Comunicação, Produtora web, SEO, Comunicação Digital, Criação de Web Sites, Portais, Flash Site, Sistemas Bluetooth, Touchscreen, E-commmerce // Web Agency // Recife - Pernambuco - Brasil // +55 81 3062.0022"/>
-        <meta name="Keywords" content="agência digital, agência web, SEO, comunicação digital, website, portais, design, flash, touch screen, mídia digital, e-commerce, comércio eletrônico, b2b, b2c, publicidade, ações estratégica, web content management, content management system, CMS"/>
-        <meta name="DC.publisher" content="Bold Comunicação" />
-        <meta name="DC.creator.address" content="contato@boldcomunicacao.com.br" />
-        <meta name="robots" content="all" />
-        <meta name="author" content="thulioph | Bold Comunicação" />
-        <meta name="rating" content="general" />
-        <meta name="distribution" content="global" />
-        <meta name="copyright" content="boldcomunicacao.com.br - Todos os direitos reservados" />
-        <meta name="language" content="en, pt-br" />
+    <!-- META TAGS -->
+    <meta name="Description" content=""/>
+    <meta name="Keywords" content=""/>
+    <meta name="DC.publisher" content="Bold Comunicação" />
+    <meta name="DC.creator.address" content="contato@boldcomunicacao.com.br" />
+    <meta name="robots" content="" />
+    <meta name="author" content="thulioph | Bold Comunicação" />
+    <meta name="rating" content="general" />
+    <meta name="distribution" content="global" />
+    <meta name="copyright" content="boldcomunicacao.com.br - Todos os direitos reservados" />
+    <meta name="language" content="en, pt-br" />
 
-        <!-- VIEWPORT -->
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- VIEWPORT -->
+    <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=1.0, user-scalable=0">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="format-detection" content="telephone=yes">
+    <meta http-equiv="cleartype" content="on">
 
-        <!-- CSS -->
-        <link rel="stylesheet" href="build/css/reset.css" media="all">
-        <link rel="stylesheet" href="build/css/main.min.css" media="all">
+    <!-- APPLE TOUCH ICON -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-touch-fullscreen" content="yes">
 
-        <!-- HUMANS -->
-        <link type="text/plain" rel="author" href="http://www.dominio.com.br/humans.txt" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./apple-touch-icon-ipad.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="./apple-touch-icon-iphone4.png" />
 
-        <!-- FAVICON E TOUCH ICON IN THE ROOT DIRECTORY -->
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-        <link rel="apple-touch-icon" href="./apple-touch-icon.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="./apple-touch-icon-ipad.png" />
-        <link rel="apple-touch-icon" sizes="114x114" href="./apple-touch-icon-iphone4.png" />
 
-        <!-- OPEN GRAPH -->
-        <meta property='og:title' content='Título do site' />
-        <meta property='og:description' content='Um breve resumo da descrição do site' />
-        <meta property='og:url' content='http://url-do-site' />
-        <meta property='og:image' content='http://url-do-site/img/img-og-facebook-200x200.png'/>
-        <meta property='og:type' content='website' />
-        <meta property='og:site_name' content='Nome do site' />
+    <!-- CSS -->
+    <link rel="stylesheet" href="dist/css/styles.combined.min.css">
 
-        <!-- LIVERELOAD -->
-        <script src="http://localhost:35729/livereload.js"></script>
-    </head>
+    <!-- HUMANS -->
+    <link type="text/plain" rel="author" href="http://www.dominio.com.br/humans.txt" />
 
-    <body>
-        <!--[if lt IE 7]>
-            <p class="chromeframe">Você está usando um browser <strong>ultrapassado</strong>. Por favor <a href="http://browsehappy.com/">atualize o browser</a> ou <a href="http://www.google.com/chromeframe/?redirect=true">ative o Frame do Google Chrome</a> para melhorar a experiência.</p>
-        <![endif]-->
+    <!-- FAVICON E TOUCH ICON IN THE ROOT DIRECTORY -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./apple-touch-icon-ipad.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="./apple-touch-icon-iphone4.png" />
+
+    <!-- OPEN GRAPH -->
+    <meta property='og:title' content='Título do site' />
+    <meta property='og:description' content='Um breve resumo da descrição do site' />
+    <meta property='og:url' content='http://url-do-site' />
+    <meta property='og:image' content='http://url-do-site/img/img-og-facebook-200x200.png'/>
+    <meta property='og:type' content='website' />
+    <meta property='og:site_name' content='Nome do site' />
+
+    <!-- LIVERELOAD -->
+    <script src="http://localhost:35729/livereload.js"></script>
+
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="dist/css/ie.css">
+        <script src="libs/js/create-elements.js"></script>
+    <![endif]-->
+</head>
